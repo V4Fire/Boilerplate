@@ -1,0 +1,5 @@
+dist/**
+src/client/**/index.js
+src/client/**/*.index.js
+src/client/libs/**
+src/**/*_es5.js
