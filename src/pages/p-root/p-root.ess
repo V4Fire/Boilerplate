@@ -1,0 +1,14 @@
+/*!
+ * V4Fire Boilerplate
+ * https://github.com/V4Fire/Boilerplate
+ *
+ * Released under the MIT license
+ * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
+ */
+
+- namespace [%fileName%]
+
+- include 'super/i-static-page/i-static-page.interface.ss'|b as placeholder
+
+- template index(params) extends ['i-static-page.interface'].index
+	- defineBase = true

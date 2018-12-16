@@ -1,5 +1,5 @@
+**/*.ts
 dist/**
-src/client/**/index.js
-src/client/**/*.index.js
-src/client/libs/**
+src/*/**/index.js
+src/*/**/*.index.js
 src/**/*_es5.js

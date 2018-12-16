@@ -4,7 +4,7 @@
   "homepage": "https://github.com/V4Fire/Boilerplate#readme",
   "main": "src/index.js",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": {
     "name": "kobezzza",
     "email": "kobezzza@gmail.com",
@@ -21,26 +21,24 @@
     "V4Fire"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "npx gulp build:tsconfig && npx webpack --watch",
+    "start": "node ./app"
   },
   "dependencies": {
-    "@v4fire/client": "github:v4fire/client",
-    "@v4fire/server": "github:v4fire/server",
-    "collection.js": "^6.0.0-beta.19",
-    "config": "^1.26.1",
-    "kcors": "^2.2.1",
-    "koa": "^2.3.0",
-    "koa-bodyparser": "^4.2.0",
-    "koa-logger": "^3.0.1",
-    "koa-router": "^7.2.1",
-    "koa-send": "^4.1.0",
-    "path-to-regexp": "^1.7.0",
-    "raven": "^2.1.1"
+    "@v4fire/client": "^2.0.0-beta.110",
+    "config": "^1.31.0",
+    "express": "^4.16.3",
+    "express-http-proxy": "1.2.0"
+  },
+  "optionalDependencies": {
+    "gulp": "^4.0.0",
+    "webpack": "4.19.0",
+    "webpack-cli": "^3.1.2"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.3.0",
-    "eslint-plugin-flowtype": "^2.34.1",
-    "gulp": "^3.9.1"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.6.1",
+    "tslint": "^5.11.0"
   }
 }

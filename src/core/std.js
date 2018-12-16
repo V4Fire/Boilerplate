@@ -1,5 +1,3 @@
-'use strict';
-
 /*!
  * V4Fire Boilerplate
  * https://github.com/V4Fire/Boilerplate
@@ -8,4 +6,4 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-module.exports = require('@v4fire/client/webpack.config');
+require('@v4fire/client/src/core/std');

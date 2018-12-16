@@ -8,4 +8,13 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-module.exports = require('@v4fire/client/webpack.config');
+const
+	{extend} = require('@v4fire/client/config/default');
+
+module.exports = extend(
+	require('@v4fire/client/config/production'),
+
+	{
+
+	}
+);

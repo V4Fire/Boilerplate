@@ -10,7 +10,6 @@
 *.aac binary
 *.ogg binary
 *.mp3 binary
-*.exe binary
 
 *.ai binary
 *.psd binary
