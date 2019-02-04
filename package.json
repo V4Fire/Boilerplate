@@ -26,7 +26,7 @@
     "start": "node ./app"
   },
   "dependencies": {
-    "@v4fire/client": "^2.0.0-beta.110",
+    "@v4fire/client": "^2.0.0-beta.145",
     "config": "^1.31.0",
     "express": "^4.16.3",
     "express-http-proxy": "1.2.0"
@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.6.1",
-    "tslint": "^5.11.0"
+    "eslint": "^5.13.0",
+    "tslint": "^5.12.1"
   }
 }
