@@ -29,11 +29,13 @@ export default class pRoot<
 	 */
 	@system()
 	readonly routes: PageSchema = {
-		'/' : {
+		index : {
+			path: '/',
 			page: 'p-index'
 		},
 
-		'/some': {
+		some: {
+			path: '/some',
 			page: 'p-some'
 		}
 	};
