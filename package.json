@@ -26,6 +26,7 @@
     "start": "node ./app"
   },
   "dependencies": {
+    "@v4fire/core": "^2.0.0-beta.41",
     "@v4fire/client": "^2.0.0-beta.145",
     "config": "^1.31.0",
     "express": "^4.16.3",
