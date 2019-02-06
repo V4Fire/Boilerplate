@@ -6,6 +6,10 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-package('p-root')
-	.extends('i-static-page')
-	.dependencies('b-router', 'b-dynamic-page');
+import API, { provider } from 'models/api';
+
+@provider('API')
+export default class Users extends API {
+	/** @override */
+	baseURL: string = '/users';
+}

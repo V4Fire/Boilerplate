@@ -6,6 +6,6 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-package('p-root')
-	.extends('i-static-page')
-	.dependencies('b-router', 'b-dynamic-page');
+import { User } from 'models/api/user/meta';
+
+export type Users = User[];

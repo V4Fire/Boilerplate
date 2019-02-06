@@ -15,5 +15,10 @@
 		< p
 			Index page
 
+		< p.&__data v-if = isReady
+			Name: {{ db.name }}<br>
+			Type: {{ db.type }}<br>
+			LVL: {{ db.lvl }}
+
 		< a href = \/some
 			Go to another page

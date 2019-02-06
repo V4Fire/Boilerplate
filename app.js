@@ -20,6 +20,18 @@ const
 app.use('/dist/client', express.static(src.clientOutput()));
 app.use('/assets', express.static(src.assets()));
 
+app.get('/api/users', (req, res) => res.send([{
+	name: 'Bill',
+	type: 'Dwarf',
+	lvl: 80
+}]));
+
+app.get('/api/users/:id', (req, res) => res.send({
+	name: 'Bill',
+	type: 'Dwarf',
+	lvl: 80
+}));
+
 [
 	['/**', 'p-root']
 
