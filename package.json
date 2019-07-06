@@ -4,7 +4,7 @@
   "homepage": "https://github.com/V4Fire/Boilerplate#readme",
   "main": "src/app.js",
   "license": "MIT",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": {
     "name": "kobezzza",
     "email": "kobezzza@gmail.com",
@@ -26,20 +26,20 @@
     "start": "node ./app"
   },
   "dependencies": {
-    "@v4fire/core": "^2.0.0-beta.41",
-    "@v4fire/client": "^2.0.0-beta.145",
+    "@v4fire/client": "^3.0.0-beta.75",
+    "@v4fire/core": "^3.0.0-beta.48",
     "config": "^1.31.0",
-    "express": "^4.16.3",
+    "express": "^4.17.1",
     "express-http-proxy": "1.2.0"
   },
   "optionalDependencies": {
-    "gulp": "^4.0.0",
-    "webpack": "4.19.0",
-    "webpack-cli": "^3.1.2"
+    "gulp": "^4.0.2",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.13.0",
-    "tslint": "^5.12.1"
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.1",
+    "tslint": "^5.18.0"
   }
 }

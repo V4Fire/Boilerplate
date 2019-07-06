@@ -33,7 +33,7 @@ export default class pIndex<D extends User = User> extends iDynamicPage<D> {
 	show: boolean = true;
 
 	/** @override */
-	@field((o) => o.createWatchObject('get', [
+	@field((o) => o.sync.object('get', [
 		['id', 'name'],
 		'show'
 	]))
