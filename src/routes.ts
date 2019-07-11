@@ -9,7 +9,7 @@
 import { PageSchema } from 'core/router/interface';
 
 export default <PageSchema>{
-	index : {
+	index: {
 		path: '/',
 		page: 'p-index'
 	},
