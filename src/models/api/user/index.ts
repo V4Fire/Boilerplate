@@ -16,7 +16,7 @@ export {
 	$ as helpers
 };
 
-@provider('API')
+@provider('api')
 export default class User extends API {
 	/** @override */
 	baseURL: string = '/users/:id';
@@ -27,7 +27,7 @@ export default class User extends API {
 	});
 
 	/** @override */
-	static readonly decoders: DecodersTable = {
+	static readonly decoders: DecodersTable = <DecodersTable>{
 		get: [$.postProcessUser]
 	};
 }

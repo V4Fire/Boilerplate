@@ -26,6 +26,15 @@ app.get('/api/users', (req, res) => res.send([{
 	lvl: 80
 }]));
 
+app.get('/api/users/skills', (req, res) => res.send([
+	'fight',
+	'magic'
+]));
+
+app.get('/api/users/inventory', (req, res) => res.send([
+	'sword+1'
+]));
+
 app.get('/api/users/:id', (req, res) => res.send({
 	name: 'Bill',
 	type: 'Dwarf',

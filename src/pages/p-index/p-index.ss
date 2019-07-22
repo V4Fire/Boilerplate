@@ -16,9 +16,11 @@
 			Index page
 
 		< p.&__data v-if = isReady
-			Name: {{ db.name }}<br>
-			Type: {{ db.type }}<br>
-			LVL: {{ db.lvl }}
+			Name: {{ db.api.User.name }}<br>
+			Type: {{ db.api.User.type }}<br>
+			LVL: {{ db.api.User.lvl }}<br>
+			Skills: {{ db.api.Skills }}<br>
+			Inventory: {{ db.api.Inventory }}
 
 		< a href = \/some
 			Go to another page

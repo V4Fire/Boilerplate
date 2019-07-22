@@ -7,9 +7,14 @@
  */
 
 import API, { provider } from 'models/api';
+import * as _ from 'models/api/skills/meta';
+
+export {
+	_ as types
+};
 
 @provider('api')
-export default class Users extends API {
+export default class Skills extends API {
 	/** @override */
-	baseURL: string = '/users';
+	baseURL: string = '/users/skills';
 }
