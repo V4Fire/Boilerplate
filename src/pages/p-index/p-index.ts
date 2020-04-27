@@ -38,8 +38,17 @@ export default class pIndex extends iDynamicPage {
 	/** @override */
 	@field((o) => o.sync.object('get', [
 		['id', 'name'],
-		'show'
+		'show',
+		['wait', 'canRequestData']
 	]))
 
 	protected readonly requestParams!: RequestParams;
+
+	/**
+	 * Returns true if the component can load remote data
+	 */
+	async canRequestData(): Promise<boolean> {
+		await this.async.sleep(3..seconds());
+		return true;
+	};
 }

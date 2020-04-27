@@ -9,7 +9,8 @@
 import 'models/api/skills';
 import 'models/api/inventory';
 
-import API, { provider, DecodersMap, FunctionalExtraProviders, ExtraProviderParams } from 'models/api';
+import { wait } from 'core/data/middlewares';
+import API, { provider, EncodersMap, DecodersMap, FunctionalExtraProviders, ExtraProviderParams } from 'models/api';
 import { postProcessUser } from 'models/api/user/helpers';
 
 export * from 'models/api';
@@ -33,6 +34,11 @@ export default class User extends API {
 	static request: typeof API.request = API.request({
 		cacheTTL: (2).seconds()
 	});
+
+	/** @override */
+	static readonly encoders: EncodersMap = {
+		get: [wait]
+	};
 
 	/** @override */
 	static readonly decoders: DecodersMap = {
