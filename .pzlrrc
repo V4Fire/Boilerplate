@@ -3,5 +3,5 @@
   "blockDir": "",
   "sourceDir": "src",
   "disclaimer": "disclaimer.txt",
-  "dependencies": ["@v4fire/core", "@v4fire/client"]
+  "dependencies": ["@v4fire/client", "@v4fire/core"]
 }
