@@ -17,7 +17,7 @@ npm run build
 ### Dev server
 
 ```bash
-# For providing some parameters can using npm start --
+# To provide some parameters by can using npm start --
 # Example: npm start -- --port 1111
 npm start
 ```
