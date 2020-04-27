@@ -7,6 +7,7 @@
  */
 
 import API, { provider } from 'models/api';
+export * from 'models/api';
 
 @provider('api')
 export default class Users extends API {

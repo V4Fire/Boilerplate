@@ -6,8 +6,6 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-export interface User {
-	name: string;
-	type: string;
-	lvl: number;
-}
+import { User } from 'models/api/user/interface';
+
+export type Users = User[];

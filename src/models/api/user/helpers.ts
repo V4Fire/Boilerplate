@@ -6,15 +6,9 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-import * as _ from 'models/api/user/meta';
+import * as _ from 'models/api/user/interface';
 
-interface User {
-	name: string;
-	type: string;
-	lvl?: number;
-}
-
-export function postProcessUser(user: Nullable<User>): _.User {
+export function postProcessUser(user: Nullable<_.RawUser>): _.User {
 	return {
 		lvl: 0,
 		name: 'Unknown',

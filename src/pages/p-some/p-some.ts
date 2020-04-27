@@ -10,7 +10,7 @@ import iDynamicPage, { component, TitleValue } from 'super/i-dynamic-page/i-dyna
 export * from 'super/i-dynamic-page/i-dynamic-page';
 
 @component()
-export default class pSome<D extends object = Dictionary> extends iDynamicPage<D> {
+export default class pSome extends iDynamicPage {
 	/** @override */
 	readonly pageTitleProp: TitleValue = 'Another page';
 }

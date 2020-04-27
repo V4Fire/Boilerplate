@@ -7,11 +7,7 @@
  */
 
 import API, { provider } from 'models/api';
-import * as _ from 'models/api/inventory/meta';
-
-export {
-	_ as types
-};
+export * from 'models/api';
 
 @provider('api')
 export default class Inventory extends API {

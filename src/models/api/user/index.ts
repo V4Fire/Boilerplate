@@ -6,15 +6,13 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-import API, { provider, DecodersTable } from 'models/api';
+import 'models/api/skills';
+import 'models/api/inventory';
 
-import * as _ from 'models/api/user/meta';
-import * as $ from 'models/api/user/helpers';
+import API, { provider, DecodersMap, FunctionalExtraProviders, ExtraProviderParams } from 'models/api';
+import { postProcessUser } from 'models/api/user/helpers';
 
-export {
-	_ as types,
-	$ as helpers
-};
+export * from 'models/api';
 
 @provider('api')
 export default class User extends API {
@@ -22,12 +20,22 @@ export default class User extends API {
 	baseURL: string = '/users/:id';
 
 	/** @override */
+	extraProviders: FunctionalExtraProviders = ({opts}: ExtraProviderParams) => ({
+		'api.Skills': null,
+		'api.Inventory': {
+			query: {
+				id: (<CanUndef<Dictionary>>opts?.query)?.name
+			}
+		}
+	})
+
+	/** @override */
 	static request: typeof API.request = API.request({
 		cacheTTL: (2).seconds()
 	});
 
 	/** @override */
-	static readonly decoders: DecodersTable = <DecodersTable>{
-		get: [$.postProcessUser]
+	static readonly decoders: DecodersMap = {
+		get: [postProcessUser]
 	};
 }
