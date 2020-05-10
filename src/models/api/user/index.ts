@@ -22,10 +22,10 @@ export default class User extends API {
 
 	/** @override */
 	extraProviders: FunctionalExtraProviders = ({opts}: ExtraProviderParams) => ({
-		'api.Skills': null,
+		'api.Skills': {query: {}},
 		'api.Inventory': {
 			query: {
-				id: (<CanUndef<Dictionary>>opts?.query)?.name
+				id: (<CanUndef<Dictionary>>opts?.query)?.id
 			}
 		}
 	})
