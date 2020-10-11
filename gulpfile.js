@@ -8,9 +8,9 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-module.exports = function (gulp = require('gulp')) {
+module.exports = function initGulp(gulp = require('gulp')) {
 	require('@v4fire/client/gulpfile')(gulp);
-	global.callGulp(module);
+	globalThis.callGulp(module);
 };
 
 module.exports();
