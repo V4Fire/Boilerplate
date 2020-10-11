@@ -12,9 +12,7 @@
 
 - template index() extends ['i-static-page.component'].index
 	- block helpers
-		- block router
-			< b-router :pages = routes
+		< b-router
 
 	- block body
-		- block pages
-			< b-dynamic-page :page = activePage
+		< b-dynamic-page :page = field.get('route.meta.component')

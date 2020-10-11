@@ -6,16 +6,18 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-import { PageSchema } from 'core/router/interface';
+import { StaticRoutes } from 'core/router/interface';
 
-export default <PageSchema>{
+export default <StaticRoutes>{
 	index: {
 		path: '/',
-		page: 'p-index'
+		component: 'p-index',
+		entryPoint: 'p-index'
 	},
 
 	some: {
 		path: '/some',
-		page: 'p-some'
+		component: 'p-some',
+		entryPoint: 'p-some'
 	}
 };
