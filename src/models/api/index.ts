@@ -7,6 +7,7 @@
  */
 
 import Provider, { provider } from 'core/data';
+
 export * from 'core/data';
 
 @provider
@@ -14,7 +15,7 @@ export default class API extends Provider {
 	/** @override */
 	static request: typeof Provider.request = Provider.request({
 		api: {namespace: 'api'},
-		cacheStrategy: 'never',
+		cacheStrategy: 'forever',
 		responseType: 'json'
 	});
 }

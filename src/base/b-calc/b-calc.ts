@@ -7,6 +7,7 @@
  */
 
 import iBlock, { component, prop } from 'super/i-block/i-block';
+
 export * from 'super/i-block/i-block';
 
 export type Op =
@@ -36,7 +37,7 @@ export default class bCalc extends iBlock {
 	readonly op: Op = '+';
 
 	/**
-	 * Calculates an expression and returns a result
+	 * Calculates an expression and returns the result
 	 */
 	protected calc(): number {
 		return Function('a', 'b', `return a ${this.op} b`)(this.p1, this.p2);

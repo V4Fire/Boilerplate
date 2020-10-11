@@ -48,7 +48,7 @@ export default class pIndex extends iDynamicPage {
 	 * Returns true if the component can load remote data
 	 */
 	async canRequestData(): Promise<boolean> {
-		await this.async.sleep(3..seconds());
+		await this.async.sleep(0.5.seconds());
 		return true;
-	};
+	}
 }

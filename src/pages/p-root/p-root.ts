@@ -7,6 +7,7 @@
  */
 
 import iStaticPage, { component } from 'super/i-static-page/i-static-page';
+
 export * from 'super/i-static-page/i-static-page';
 
 @component({root: true})

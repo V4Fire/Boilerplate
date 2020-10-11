@@ -7,6 +7,7 @@
  */
 
 import iDynamicPage, { component, TitleValue } from 'super/i-dynamic-page/i-dynamic-page';
+
 export * from 'super/i-dynamic-page/i-dynamic-page';
 
 @component()
