@@ -6,9 +6,9 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-import * as _ from 'models/api/user/interface';
+import type { RawUser, User } from 'models/api/user';
 
-export function postProcessUser(user: Nullable<_.RawUser>): _.User {
+export function postProcessUser(user: Nullable<RawUser>): User {
 	return {
 		lvl: 0,
 		name: 'Unknown',

@@ -14,14 +14,13 @@ import API, { provider, EncodersMap, DecodersMap, FunctionalExtraProviders, Extr
 import { postProcessUser } from 'models/api/user/helpers';
 
 export * from 'models/api';
+export * from 'models/api/user/interface';
 
 @provider('api')
 export default class User extends API {
-	/** @override */
-	baseURL: string = '/users/:id';
+	override baseURL: string = '/users/:id';
 
-	/** @override */
-	extraProviders: FunctionalExtraProviders = ({opts}: ExtraProviderParams) => ({
+	override extraProviders: FunctionalExtraProviders = ({opts}: ExtraProviderParams) => ({
 		'api.Skills': {query: {}},
 		'api.Inventory': {
 			query: {
@@ -30,18 +29,15 @@ export default class User extends API {
 		}
 	})
 
-	/** @override */
-	static request: typeof API.request = API.request({
+	static override request: typeof API.request = API.request({
 		cacheTTL: (2).seconds()
 	});
 
-	/** @override */
-	static readonly encoders: EncodersMap = {
+	static override readonly encoders: EncodersMap = {
 		get: [wait]
 	};
 
-	/** @override */
-	static readonly decoders: DecodersMap = {
+	static override readonly decoders: DecodersMap = {
 		get: [postProcessUser]
 	};
 }

@@ -7,14 +7,10 @@
  */
 
 import iBlock, { component, prop } from 'super/i-block/i-block';
+import type { Op } from 'base/b-calc/interface';
 
 export * from 'super/i-block/i-block';
-
-export type Op =
-	'+' |
-	'-' |
-	'*' |
-	'/';
+export * from 'base/b-calc/interface';
 
 @component()
 export default class bCalc extends iBlock {

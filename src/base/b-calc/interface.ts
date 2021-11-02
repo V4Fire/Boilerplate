@@ -6,5 +6,8 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-import './p-root';
-import '../pages/p-some';
+export type Op =
+	'+' |
+	'-' |
+	'*' |
+	'/';

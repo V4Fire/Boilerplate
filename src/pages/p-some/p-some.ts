@@ -12,6 +12,5 @@ export * from 'super/i-dynamic-page/i-dynamic-page';
 
 @component()
 export default class pSome extends iDynamicPage {
-	/** @override */
-	readonly pageTitleProp: TitleValue = 'Another page';
+	override readonly pageTitleProp: TitleValue = 'Another page';
 }

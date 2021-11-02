@@ -3,5 +3,6 @@
   "blockDir": "",
   "sourceDir": "src",
   "disclaimer": "disclaimer.txt",
+  "designSystem": "@v4fire/design-system",
   "dependencies": ["@v4fire/client", "@v4fire/core"]
 }

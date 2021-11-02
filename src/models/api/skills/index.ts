@@ -9,9 +9,9 @@
 import API, { provider } from 'models/api';
 
 export * from 'models/api';
+export * from 'models/api/skills/interface';
 
 @provider('api')
 export default class Skills extends API {
-	/** @override */
-	baseURL: string = '/users/skills';
+	override baseURL: string = '/users/skills';
 }

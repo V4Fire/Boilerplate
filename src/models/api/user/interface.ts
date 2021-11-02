@@ -6,8 +6,8 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-import { Skills } from 'models/api/skills/interface';
-import { Inventory } from 'models/api/inventory/interface';
+import type { Skills } from 'models/api/skills';
+import type { Inventory } from 'models/api/inventory';
 
 export interface RawUser {
 	name: string;

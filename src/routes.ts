@@ -6,18 +6,18 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-import { StaticRoutes } from 'core/router/interface';
+import type { StaticRoutes } from 'core/router';
 
 export default <StaticRoutes>{
 	index: {
 		path: '/',
 		component: 'p-index',
-		entryPoint: 'p-index'
+		load: () => import('pages/p-index')
 	},
 
 	some: {
 		path: '/some',
 		component: 'p-some',
-		entryPoint: 'p-some'
+		load: () => import('pages/p-some')
 	}
 };

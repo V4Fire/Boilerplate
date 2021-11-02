@@ -7,21 +7,16 @@
  */
 
 import 'models/api/user';
-import { Data } from 'models/api/user/interface';
+import type { Data } from 'models/api/user';
 
 import iDynamicPage, { component, field, TitleValue, RequestParams } from 'super/i-dynamic-page/i-dynamic-page';
 export * from 'super/i-dynamic-page/i-dynamic-page';
 
 @component()
 export default class pIndex extends iDynamicPage {
-	/** @override */
-	readonly DB!: Data;
-
-	/** @override */
-	readonly pageTitleProp: TitleValue = 'Index page';
-
-	/** @override */
-	readonly dataProvider: string = 'api.User';
+	override readonly DB!: Data;
+	override readonly pageTitleProp: TitleValue = 'Index page';
+	override readonly dataProvider: string = 'api.User';
 
 	/**
 	 * User name
@@ -35,14 +30,13 @@ export default class pIndex extends iDynamicPage {
 	@field()
 	show: boolean = true;
 
-	/** @override */
 	@field((o) => o.sync.object('get', [
 		['id', 'name'],
 		'show',
 		['wait', 'canRequestData']
 	]))
 
-	protected readonly requestParams!: RequestParams;
+	protected override readonly requestParams!: RequestParams;
 
 	/**
 	 * Returns true if the component can load remote data
