@@ -13,7 +13,7 @@ export * from 'core/data';
 @provider
 export default class API extends Provider {
 	static override request: typeof Provider.request = Provider.request({
-		api: {namespace: 'api'},
+		api: {namespace: '/api'},
 		cacheStrategy: 'forever',
 		responseType: 'json'
 	});
