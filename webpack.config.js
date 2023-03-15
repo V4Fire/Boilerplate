@@ -8,6 +8,6 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-require('config');
+require('@config/config');
 
 module.exports = include('@super/webpack.config', __dirname);

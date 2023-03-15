@@ -9,14 +9,23 @@
 import 'models/api/user';
 import type { Data } from 'models/api/user';
 
-import iDynamicPage, { component, field, TitleValue, RequestParams } from 'super/i-dynamic-page/i-dynamic-page';
-export * from 'super/i-dynamic-page/i-dynamic-page';
+import iDynamicPage, { component, field, system, TitleValue, RequestParams } from 'components/super/i-dynamic-page/i-dynamic-page';
+import DataProvider, { getDefaultRequestParams, get } from 'components/friends/data-provider';
+import Sync, { object } from 'components/friends/sync';
+
+DataProvider.addToPrototype(getDefaultRequestParams);
+DataProvider.addToPrototype(get);
+Sync.addToPrototype(object);
+
+export * from 'components/super/i-dynamic-page/i-dynamic-page';
 
 @component()
 export default class pIndex extends iDynamicPage {
 	override readonly DB!: Data;
 	override readonly pageTitleProp: TitleValue = 'Index page';
-	override readonly dataProvider: string = 'api.User';
+
+	@system((ctx) => new DataProvider(ctx,'api.User'))
+	override readonly dataProvider!: DataProvider;
 
 	/**
 	 * User name
@@ -36,7 +45,7 @@ export default class pIndex extends iDynamicPage {
 		['wait', 'canRequestData']
 	]))
 
-	protected override readonly requestParams!: RequestParams;
+	override readonly requestParams!: RequestParams;
 
 	/**
 	 * Returns true if the component can load remote data

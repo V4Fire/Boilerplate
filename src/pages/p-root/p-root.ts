@@ -6,9 +6,16 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-import iStaticPage, { component } from 'super/i-static-page/i-static-page';
+import iStaticPage, { component } from 'components/super/i-static-page/i-static-page';
 
-export * from 'super/i-static-page/i-static-page';
+export * from 'components/super/i-static-page/i-static-page';
 
 @component({root: true})
-export default class pRoot extends iStaticPage {}
+export default class pRoot extends iStaticPage {
+	/**
+	 * Название активной страницы
+	 */
+	override get activePage(): CanUndef<string> {
+		return this.route && this.field.get<string>('route.meta.component');
+	}
+}

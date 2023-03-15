@@ -22,28 +22,29 @@
   ],
   "scripts": {
     "start": "node ./app",
-    "build": "gulp build:tsconfig && webpack",
-    "build:file": "gulp build:tsconfig && webpack --public-path",
-    "dev": "gulp build:tsconfig && webpack --watch",
-    "dev:file": "gulp build:tsconfig && webpack --watch --public-path",
+    "build": "npm run build:tsconfig && webpack",
+    "build:tsconfig": "node node_modules/@v4fire/core/build/build-tsconfig",
+    "build:file": "npm run build:tsconfig && webpack --env public-path",
+    "dev": "npm run build:tsconfig && webpack --watch",
+    "dev:file": "npm run build:tsconfig && webpack --watch --env --public-path",
     "test": "npm run test:typescript && npm run test:eslint",
     "test:eslint": "npx eslint ./config/** ./src/**",
     "test:typescript": "node node_modules/@v4fire/typescript-check",
     "up": "npm i && npm up && npm audit fix"
   },
   "dependencies": {
-    "@v4fire/client": "3.14.0",
-    "@v4fire/core": "3.73.0",
-    "config": "1.31.0",
-    "express": "4.17.1",
-    "express-http-proxy": "1.2.0"
+    "@v4fire/client": "github:V4Fire/Client#issues/627",
+    "@v4fire/core": "github:V4Fire/Core#prelude-review",
+    "@config/config": "npm:config@1.31.0",
+    "express": "4.17.3",
+    "express-http-proxy": "1.6.3"
   },
   "optionalDependencies": {
     "gulp": "4.0.2",
-    "webpack": "5.65.0",
-    "webpack-cli": "4.9.1"
+    "webpack": "5.70.0",
+    "webpack-cli": "4.9.2"
   },
   "devDependencies": {
-    "@v4fire/linters": "1.9.0"
+    "@v4fire/linters": "^2.2.0"
   }
 }

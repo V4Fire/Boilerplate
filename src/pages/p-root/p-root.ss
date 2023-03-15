@@ -8,11 +8,16 @@
 
 - namespace [%fileName%]
 
-- include 'super/i-static-page/i-static-page.component.ss'|b as placeholder
+- include 'components/super/i-static-page/i-static-page.component.ss'|b as placeholder
 
 - template index() extends ['i-static-page.component'].index
 	- block helpers
-		< b-router
+		< b-router v-once
 
 	- block body
-		< b-dynamic-page :page = field.get('route.meta.component')
+		< .&__view v-if = isReady
+			< b-dynamic-page &
+				ref = page |
+				:page = activePage |
+				:keepAlive = true
+			.

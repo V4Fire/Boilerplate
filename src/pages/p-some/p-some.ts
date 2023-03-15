@@ -6,9 +6,9 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-import iDynamicPage, { component, TitleValue } from 'super/i-dynamic-page/i-dynamic-page';
+import iDynamicPage, { component, TitleValue } from 'components/super/i-dynamic-page/i-dynamic-page';
 
-export * from 'super/i-dynamic-page/i-dynamic-page';
+export * from 'components/super/i-dynamic-page/i-dynamic-page';
 
 @component()
 export default class pSome extends iDynamicPage {

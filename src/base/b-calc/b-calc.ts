@@ -6,10 +6,10 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-import iBlock, { component, prop } from 'super/i-block/i-block';
+import iBlock, { component, prop } from 'components/super/i-block/i-block';
 import type { Op } from 'base/b-calc/interface';
 
-export * from 'super/i-block/i-block';
+export * from 'components/super/i-block/i-block';
 export * from 'base/b-calc/interface';
 
 @component()

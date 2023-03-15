@@ -8,7 +8,7 @@
  * https://github.com/V4Fire/Boilerplate/blob/master/LICENSE
  */
 
-require('config');
+require('@config/config');
 
 module.exports = function initGulp(gulp = require('gulp')) {
 	include('@super/gulpfile', __dirname)(gulp);

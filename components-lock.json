@@ -1,12 +1,12 @@
 {
-  "hash": "74630f2350eaa9a4bf5cb0ab4e2a7640675da490ff0956ecc91f1e633e9aa2a4",
+  "hash": "7e75825e431e2fa703c00024e26c4d87d7a9a1c46167aa7dc0406b1666156677",
   "data": {
     "%data": "%data:Map",
     "%data:Map": [
       [
         "b-bottom-slide",
         {
-          "index": "node_modules/@v4fire/client/src/base/b-bottom-slide/index.js",
+          "index": "node_modules/@v4fire/client/src/components/base/b-bottom-slide/index.js",
           "declaration": {
             "name": "b-bottom-slide",
             "parent": "i-block",
@@ -27,49 +27,55 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/base/b-bottom-slide/b-bottom-slide.ts",
+          "logic": "node_modules/@v4fire/client/src/components/base/b-bottom-slide/b-bottom-slide.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/base/b-bottom-slide/b-bottom-slide.styl"
+            "node_modules/@v4fire/client/src/components/base/b-bottom-slide/b-bottom-slide.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/base/b-bottom-slide/b-bottom-slide.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/base/b-bottom-slide/b-bottom-slide.ss",
           "etpl": null
         }
       ],
       [
         "b-button",
         {
-          "index": "node_modules/@v4fire/client/src/form/b-button/index.js",
+          "index": "node_modules/@v4fire/client/src/components/form/b-button/index.js",
           "declaration": {
             "name": "b-button",
             "parent": "i-data",
             "dependencies": [
-              "b-icon",
               "b-progress-icon"
             ],
-            "libs": []
+            "libs": [
+              "components/directives/icon"
+            ]
           },
           "name": "b-button",
           "parent": "i-data",
           "dependencies": [
-            "b-icon",
             "b-progress-icon"
           ],
-          "libs": [],
+          "libs": [
+            "components/directives/icon"
+          ],
           "resolvedLibs": {
             "%data": "%data:Set",
-            "%data:Set": []
+            "%data:Set": [
+              "components/directives/icon"
+            ]
           },
           "resolvedOwnLibs": {
             "%data": "%data:Set",
-            "%data:Set": []
+            "%data:Set": [
+              "components/directives/icon"
+            ]
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/form/b-button/b-button.ts",
+          "logic": "node_modules/@v4fire/client/src/components/form/b-button/b-button.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/form/b-button/b-button.styl"
+            "node_modules/@v4fire/client/src/components/form/b-button/b-button.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/form/b-button/b-button.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/form/b-button/b-button.ss",
           "etpl": null
         }
       ],
@@ -108,7 +114,7 @@
       [
         "b-checkbox",
         {
-          "index": "node_modules/@v4fire/client/src/form/b-checkbox/index.js",
+          "index": "node_modules/@v4fire/client/src/components/form/b-checkbox/index.js",
           "declaration": {
             "name": "b-checkbox",
             "parent": "i-input",
@@ -129,18 +135,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/form/b-checkbox/b-checkbox.ts",
+          "logic": "node_modules/@v4fire/client/src/components/form/b-checkbox/b-checkbox.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/form/b-checkbox/b-checkbox.styl"
+            "node_modules/@v4fire/client/src/components/form/b-checkbox/b-checkbox.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/form/b-checkbox/b-checkbox.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/form/b-checkbox/b-checkbox.ss",
           "etpl": null
         }
       ],
       [
         "b-dummy",
         {
-          "index": "node_modules/@v4fire/client/src/dummies/b-dummy/index.js",
+          "index": "node_modules/@v4fire/client/src/components/dummies/b-dummy/index.js",
           "declaration": {
             "name": "b-dummy",
             "parent": "i-data",
@@ -161,18 +167,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/dummies/b-dummy/b-dummy.ts",
+          "logic": "node_modules/@v4fire/client/src/components/dummies/b-dummy/b-dummy.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/dummies/b-dummy/b-dummy.styl"
+            "node_modules/@v4fire/client/src/components/dummies/b-dummy/b-dummy.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/dummies/b-dummy/b-dummy.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/dummies/b-dummy/b-dummy.ss",
           "etpl": null
         }
       ],
       [
         "b-dummy-async-render",
         {
-          "index": "node_modules/@v4fire/client/src/dummies/b-dummy-async-render/index.js",
+          "index": "node_modules/@v4fire/client/src/components/dummies/b-dummy-async-render/index.js",
           "declaration": {
             "name": "b-dummy-async-render",
             "parent": "i-data",
@@ -193,18 +199,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/dummies/b-dummy-async-render/b-dummy-async-render.ts",
+          "logic": "node_modules/@v4fire/client/src/components/dummies/b-dummy-async-render/b-dummy-async-render.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/dummies/b-dummy-async-render/b-dummy-async-render.styl"
+            "node_modules/@v4fire/client/src/components/dummies/b-dummy-async-render/b-dummy-async-render.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/dummies/b-dummy-async-render/b-dummy-async-render.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/dummies/b-dummy-async-render/b-dummy-async-render.ss",
           "etpl": null
         }
       ],
       [
         "b-dummy-control-list",
         {
-          "index": "node_modules/@v4fire/client/src/dummies/b-dummy-control-list/index.js",
+          "index": "node_modules/@v4fire/client/src/components/dummies/b-dummy-control-list/index.js",
           "declaration": {
             "name": "b-dummy-control-list",
             "parent": "i-block",
@@ -225,18 +231,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/dummies/b-dummy-control-list/b-dummy-control-list.ts",
+          "logic": "node_modules/@v4fire/client/src/components/dummies/b-dummy-control-list/b-dummy-control-list.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/dummies/b-dummy-control-list/b-dummy-control-list.styl"
+            "node_modules/@v4fire/client/src/components/dummies/b-dummy-control-list/b-dummy-control-list.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/dummies/b-dummy-control-list/b-dummy-control-list.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/dummies/b-dummy-control-list/b-dummy-control-list.ss",
           "etpl": null
         }
       ],
       [
         "b-dummy-decorators",
         {
-          "index": "node_modules/@v4fire/client/src/dummies/b-dummy-decorators/index.js",
+          "index": "node_modules/@v4fire/client/src/components/dummies/b-dummy-decorators/index.js",
           "declaration": {
             "name": "b-dummy-decorators",
             "parent": "i-data",
@@ -257,18 +263,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/dummies/b-dummy-decorators/b-dummy-decorators.ts",
+          "logic": "node_modules/@v4fire/client/src/components/dummies/b-dummy-decorators/b-dummy-decorators.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/dummies/b-dummy-decorators/b-dummy-decorators.styl"
+            "node_modules/@v4fire/client/src/components/dummies/b-dummy-decorators/b-dummy-decorators.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/dummies/b-dummy-decorators/b-dummy-decorators.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/dummies/b-dummy-decorators/b-dummy-decorators.ss",
           "etpl": null
         }
       ],
       [
         "b-dummy-lfc",
         {
-          "index": "node_modules/@v4fire/client/src/dummies/b-dummy-lfc/index.js",
+          "index": "node_modules/@v4fire/client/src/components/dummies/b-dummy-lfc/index.js",
           "declaration": {
             "name": "b-dummy-lfc",
             "parent": "i-data",
@@ -289,18 +295,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/dummies/b-dummy-lfc/b-dummy-lfc.ts",
+          "logic": "node_modules/@v4fire/client/src/components/dummies/b-dummy-lfc/b-dummy-lfc.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/dummies/b-dummy-lfc/b-dummy-lfc.styl"
+            "node_modules/@v4fire/client/src/components/dummies/b-dummy-lfc/b-dummy-lfc.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/dummies/b-dummy-lfc/b-dummy-lfc.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/dummies/b-dummy-lfc/b-dummy-lfc.ss",
           "etpl": null
         }
       ],
       [
         "b-dummy-module-loader",
         {
-          "index": "node_modules/@v4fire/client/src/dummies/b-dummy-module-loader/index.js",
+          "index": "node_modules/@v4fire/client/src/components/dummies/b-dummy-module-loader/index.js",
           "declaration": {
             "name": "b-dummy-module-loader",
             "parent": "i-data",
@@ -321,18 +327,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/dummies/b-dummy-module-loader/b-dummy-module-loader.ts",
+          "logic": "node_modules/@v4fire/client/src/components/dummies/b-dummy-module-loader/b-dummy-module-loader.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/dummies/b-dummy-module-loader/b-dummy-module-loader.styl"
+            "node_modules/@v4fire/client/src/components/dummies/b-dummy-module-loader/b-dummy-module-loader.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/dummies/b-dummy-module-loader/b-dummy-module-loader.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/dummies/b-dummy-module-loader/b-dummy-module-loader.ss",
           "etpl": null
         }
       ],
       [
         "b-dummy-module1",
         {
-          "index": "node_modules/@v4fire/client/src/dummies/b-dummy-module-loader/b-dummy-module1/index.js",
+          "index": "node_modules/@v4fire/client/src/components/dummies/b-dummy-module-loader/b-dummy-module1/index.js",
           "declaration": {
             "name": "b-dummy-module1",
             "parent": "i-data",
@@ -353,18 +359,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/dummies/b-dummy-module-loader/b-dummy-module1/b-dummy-module1.ts",
+          "logic": "node_modules/@v4fire/client/src/components/dummies/b-dummy-module-loader/b-dummy-module1/b-dummy-module1.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/dummies/b-dummy-module-loader/b-dummy-module1/b-dummy-module1.styl"
+            "node_modules/@v4fire/client/src/components/dummies/b-dummy-module-loader/b-dummy-module1/b-dummy-module1.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/dummies/b-dummy-module-loader/b-dummy-module1/b-dummy-module1.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/dummies/b-dummy-module-loader/b-dummy-module1/b-dummy-module1.ss",
           "etpl": null
         }
       ],
       [
         "b-dummy-module2",
         {
-          "index": "node_modules/@v4fire/client/src/dummies/b-dummy-module-loader/b-dummy-module2/index.js",
+          "index": "node_modules/@v4fire/client/src/components/dummies/b-dummy-module-loader/b-dummy-module2/index.js",
           "declaration": {
             "name": "b-dummy-module2",
             "parent": "i-data",
@@ -385,18 +391,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/dummies/b-dummy-module-loader/b-dummy-module2/b-dummy-module2.ts",
+          "logic": "node_modules/@v4fire/client/src/components/dummies/b-dummy-module-loader/b-dummy-module2/b-dummy-module2.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/dummies/b-dummy-module-loader/b-dummy-module2/b-dummy-module2.styl"
+            "node_modules/@v4fire/client/src/components/dummies/b-dummy-module-loader/b-dummy-module2/b-dummy-module2.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/dummies/b-dummy-module-loader/b-dummy-module2/b-dummy-module2.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/dummies/b-dummy-module-loader/b-dummy-module2/b-dummy-module2.ss",
           "etpl": null
         }
       ],
       [
         "b-dummy-state",
         {
-          "index": "node_modules/@v4fire/client/src/dummies/b-dummy-state/index.js",
+          "index": "node_modules/@v4fire/client/src/components/dummies/b-dummy-state/index.js",
           "declaration": {
             "name": "b-dummy-state",
             "parent": "i-data",
@@ -417,18 +423,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/dummies/b-dummy-state/b-dummy-state.ts",
+          "logic": "node_modules/@v4fire/client/src/components/dummies/b-dummy-state/b-dummy-state.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/dummies/b-dummy-state/b-dummy-state.styl"
+            "node_modules/@v4fire/client/src/components/dummies/b-dummy-state/b-dummy-state.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/dummies/b-dummy-state/b-dummy-state.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/dummies/b-dummy-state/b-dummy-state.ss",
           "etpl": null
         }
       ],
       [
         "b-dummy-sync",
         {
-          "index": "node_modules/@v4fire/client/src/dummies/b-dummy-sync/index.js",
+          "index": "node_modules/@v4fire/client/src/components/dummies/b-dummy-sync/index.js",
           "declaration": {
             "name": "b-dummy-sync",
             "parent": "i-data",
@@ -449,18 +455,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/dummies/b-dummy-sync/b-dummy-sync.ts",
+          "logic": "node_modules/@v4fire/client/src/components/dummies/b-dummy-sync/b-dummy-sync.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/dummies/b-dummy-sync/b-dummy-sync.styl"
+            "node_modules/@v4fire/client/src/components/dummies/b-dummy-sync/b-dummy-sync.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/dummies/b-dummy-sync/b-dummy-sync.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/dummies/b-dummy-sync/b-dummy-sync.ss",
           "etpl": null
         }
       ],
       [
         "b-dummy-text",
         {
-          "index": "node_modules/@v4fire/client/src/dummies/b-dummy-text/index.js",
+          "index": "node_modules/@v4fire/client/src/components/dummies/b-dummy-text/index.js",
           "declaration": {
             "name": "b-dummy-text",
             "parent": "i-input-text",
@@ -481,18 +487,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/dummies/b-dummy-text/b-dummy-text.ts",
+          "logic": "node_modules/@v4fire/client/src/components/dummies/b-dummy-text/b-dummy-text.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/dummies/b-dummy-text/b-dummy-text.styl"
+            "node_modules/@v4fire/client/src/components/dummies/b-dummy-text/b-dummy-text.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/dummies/b-dummy-text/b-dummy-text.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/dummies/b-dummy-text/b-dummy-text.ss",
           "etpl": null
         }
       ],
       [
         "b-dummy-watch",
         {
-          "index": "node_modules/@v4fire/client/src/dummies/b-dummy-watch/index.js",
+          "index": "node_modules/@v4fire/client/src/components/dummies/b-dummy-watch/index.js",
           "declaration": {
             "name": "b-dummy-watch",
             "parent": "i-data",
@@ -517,18 +523,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/dummies/b-dummy-watch/b-dummy-watch.ts",
+          "logic": "node_modules/@v4fire/client/src/components/dummies/b-dummy-watch/b-dummy-watch.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/dummies/b-dummy-watch/b-dummy-watch.styl"
+            "node_modules/@v4fire/client/src/components/dummies/b-dummy-watch/b-dummy-watch.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/dummies/b-dummy-watch/b-dummy-watch.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/dummies/b-dummy-watch/b-dummy-watch.ss",
           "etpl": null
         }
       ],
       [
         "b-dynamic-page",
         {
-          "index": "node_modules/@v4fire/client/src/base/b-dynamic-page/index.js",
+          "index": "node_modules/@v4fire/client/src/components/base/b-dynamic-page/index.js",
           "declaration": {
             "name": "b-dynamic-page",
             "parent": "i-dynamic-page",
@@ -549,18 +555,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/base/b-dynamic-page/b-dynamic-page.ts",
+          "logic": "node_modules/@v4fire/client/src/components/base/b-dynamic-page/b-dynamic-page.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/base/b-dynamic-page/b-dynamic-page.styl"
+            "node_modules/@v4fire/client/src/components/base/b-dynamic-page/b-dynamic-page.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/base/b-dynamic-page/b-dynamic-page.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/base/b-dynamic-page/b-dynamic-page.ss",
           "etpl": null
         }
       ],
       [
         "b-form",
         {
-          "index": "node_modules/@v4fire/client/src/form/b-form/index.js",
+          "index": "node_modules/@v4fire/client/src/components/form/b-form/index.js",
           "declaration": {
             "name": "b-form",
             "parent": "i-block",
@@ -581,159 +587,25 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/form/b-form/b-form.ts",
+          "logic": "node_modules/@v4fire/client/src/components/form/b-form/b-form.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/form/b-form/b-form.styl"
+            "node_modules/@v4fire/client/src/components/form/b-form/b-form.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/form/b-form/b-form.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/form/b-form/b-form.ss",
           "etpl": null
         }
       ],
       [
-        "b-icon",
+        "b-hidden-input",
         {
-          "index": "node_modules/@v4fire/client/src/icons/b-icon/index.js",
+          "index": "node_modules/@v4fire/client/src/components/form/b-hidden-input/index.js",
           "declaration": {
-            "name": "b-icon",
-            "parent": "i-block",
-            "dependencies": [],
-            "libs": []
-          },
-          "name": "b-icon",
-          "parent": "i-block",
-          "dependencies": [],
-          "libs": [],
-          "resolvedLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "resolvedOwnLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "type": "block",
-          "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/icons/b-icon/b-icon.ts",
-          "styles": [
-            "node_modules/@v4fire/client/src/icons/b-icon/b-icon.styl"
-          ],
-          "tpl": "node_modules/@v4fire/client/src/icons/b-icon/b-icon.ss",
-          "etpl": null
-        }
-      ],
-      [
-        "b-icon-button",
-        {
-          "index": "node_modules/@v4fire/client/src/form/b-icon-button/index.js",
-          "declaration": {
-            "name": "b-icon-button",
-            "parent": "b-button",
-            "dependencies": [],
-            "libs": []
-          },
-          "name": "b-icon-button",
-          "parent": "b-button",
-          "dependencies": [],
-          "libs": [],
-          "resolvedLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "resolvedOwnLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "type": "block",
-          "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/form/b-icon-button/b-icon-button.ts",
-          "styles": [
-            "node_modules/@v4fire/client/src/form/b-icon-button/b-icon-button.styl"
-          ],
-          "tpl": "node_modules/@v4fire/client/src/form/b-icon-button/b-icon-button.ss",
-          "etpl": null
-        }
-      ],
-      [
-        "b-image",
-        {
-          "index": "node_modules/@v4fire/client/src/base/b-image/index.js",
-          "declaration": {
-            "name": "b-image",
-            "parent": "i-block",
-            "dependencies": [],
-            "libs": []
-          },
-          "name": "b-image",
-          "parent": "i-block",
-          "dependencies": [],
-          "libs": [],
-          "resolvedLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "resolvedOwnLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "type": "block",
-          "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/base/b-image/b-image.ts",
-          "styles": [
-            "node_modules/@v4fire/client/src/base/b-image/b-image.styl"
-          ],
-          "tpl": "node_modules/@v4fire/client/src/base/b-image/b-image.ss",
-          "etpl": null
-        }
-      ],
-      [
-        "b-input",
-        {
-          "index": "node_modules/@v4fire/client/src/form/b-input/index.js",
-          "declaration": {
-            "name": "b-input",
-            "parent": "i-input-text",
-            "dependencies": [
-              "b-icon",
-              "b-progress-icon"
-            ],
-            "libs": []
-          },
-          "name": "b-input",
-          "parent": "i-input-text",
-          "dependencies": [
-            "b-icon",
-            "b-progress-icon"
-          ],
-          "libs": [],
-          "resolvedLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "resolvedOwnLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "type": "block",
-          "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/form/b-input/b-input.ts",
-          "styles": [
-            "node_modules/@v4fire/client/src/form/b-input/b-input.styl"
-          ],
-          "tpl": "node_modules/@v4fire/client/src/form/b-input/b-input.ss",
-          "etpl": null
-        }
-      ],
-      [
-        "b-input-hidden",
-        {
-          "index": "node_modules/@v4fire/client/src/form/b-input-hidden/index.js",
-          "declaration": {
-            "name": "b-input-hidden",
+            "name": "b-hidden-input",
             "parent": "i-input",
             "dependencies": [],
             "libs": []
           },
-          "name": "b-input-hidden",
+          "name": "b-hidden-input",
           "parent": "i-input",
           "dependencies": [],
           "libs": [],
@@ -747,37 +619,33 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/form/b-input-hidden/b-input-hidden.ts",
+          "logic": "node_modules/@v4fire/client/src/components/form/b-hidden-input/b-hidden-input.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/form/b-input-hidden/b-input-hidden.styl"
+            "node_modules/@v4fire/client/src/components/form/b-hidden-input/b-hidden-input.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/form/b-input-hidden/b-input-hidden.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/form/b-hidden-input/b-hidden-input.ss",
           "etpl": null
         }
       ],
       [
-        "b-list",
+        "b-icon-button",
         {
-          "index": "node_modules/@v4fire/client/src/base/b-list/index.js",
+          "index": "node_modules/@v4fire/client/src/components/form/b-icon-button/index.js",
           "declaration": {
-            "name": "b-list",
-            "parent": "i-data",
-            "dependencies": [
-              "b-icon",
-              "b-progress-icon"
-            ],
+            "name": "b-icon-button",
+            "parent": "b-button",
+            "dependencies": [],
             "libs": []
           },
-          "name": "b-list",
-          "parent": "i-data",
-          "dependencies": [
-            "b-icon",
-            "b-progress-icon"
-          ],
+          "name": "b-icon-button",
+          "parent": "b-button",
+          "dependencies": [],
           "libs": [],
           "resolvedLibs": {
             "%data": "%data:Set",
-            "%data:Set": []
+            "%data:Set": [
+              "components/directives/icon"
+            ]
           },
           "resolvedOwnLibs": {
             "%data": "%data:Set",
@@ -785,18 +653,106 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/base/b-list/b-list.ts",
+          "logic": "node_modules/@v4fire/client/src/components/form/b-icon-button/b-icon-button.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/base/b-list/b-list.styl"
+            "node_modules/@v4fire/client/src/components/form/b-icon-button/b-icon-button.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/base/b-list/b-list.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/form/b-icon-button/b-icon-button.ss",
+          "etpl": null
+        }
+      ],
+      [
+        "b-input",
+        {
+          "index": "node_modules/@v4fire/client/src/components/form/b-input/index.js",
+          "declaration": {
+            "name": "b-input",
+            "parent": "i-input-text",
+            "dependencies": [
+              "b-progress-icon"
+            ],
+            "libs": [
+              "components/directives/icon"
+            ]
+          },
+          "name": "b-input",
+          "parent": "i-input-text",
+          "dependencies": [
+            "b-progress-icon"
+          ],
+          "libs": [
+            "components/directives/icon"
+          ],
+          "resolvedLibs": {
+            "%data": "%data:Set",
+            "%data:Set": [
+              "components/directives/icon"
+            ]
+          },
+          "resolvedOwnLibs": {
+            "%data": "%data:Set",
+            "%data:Set": [
+              "components/directives/icon"
+            ]
+          },
+          "type": "block",
+          "mixin": false,
+          "logic": "node_modules/@v4fire/client/src/components/form/b-input/b-input.ts",
+          "styles": [
+            "node_modules/@v4fire/client/src/components/form/b-input/b-input.styl"
+          ],
+          "tpl": "node_modules/@v4fire/client/src/components/form/b-input/b-input.ss",
+          "etpl": null
+        }
+      ],
+      [
+        "b-list",
+        {
+          "index": "node_modules/@v4fire/client/src/components/base/b-list/index.js",
+          "declaration": {
+            "name": "b-list",
+            "parent": "i-data",
+            "dependencies": [
+              "b-progress-icon"
+            ],
+            "libs": [
+              "components/directives/icon"
+            ]
+          },
+          "name": "b-list",
+          "parent": "i-data",
+          "dependencies": [
+            "b-progress-icon"
+          ],
+          "libs": [
+            "components/directives/icon"
+          ],
+          "resolvedLibs": {
+            "%data": "%data:Set",
+            "%data:Set": [
+              "components/directives/icon"
+            ]
+          },
+          "resolvedOwnLibs": {
+            "%data": "%data:Set",
+            "%data:Set": [
+              "components/directives/icon"
+            ]
+          },
+          "type": "block",
+          "mixin": false,
+          "logic": "node_modules/@v4fire/client/src/components/base/b-list/b-list.ts",
+          "styles": [
+            "node_modules/@v4fire/client/src/components/base/b-list/b-list.styl"
+          ],
+          "tpl": "node_modules/@v4fire/client/src/components/base/b-list/b-list.ss",
           "etpl": null
         }
       ],
       [
         "b-progress-icon",
         {
-          "index": "node_modules/@v4fire/client/src/icons/b-progress-icon/index.js",
+          "index": "node_modules/@v4fire/client/src/components/icons/b-progress-icon/index.js",
           "declaration": {
             "name": "b-progress-icon",
             "parent": "i-block",
@@ -817,18 +773,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/icons/b-progress-icon/b-progress-icon.ts",
+          "logic": "node_modules/@v4fire/client/src/components/icons/b-progress-icon/b-progress-icon.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/icons/b-progress-icon/b-progress-icon.styl"
+            "node_modules/@v4fire/client/src/components/icons/b-progress-icon/b-progress-icon.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/icons/b-progress-icon/b-progress-icon.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/icons/b-progress-icon/b-progress-icon.ss",
           "etpl": null
         }
       ],
       [
         "b-radio-button",
         {
-          "index": "node_modules/@v4fire/client/src/form/b-radio-button/index.js",
+          "index": "node_modules/@v4fire/client/src/components/form/b-radio-button/index.js",
           "declaration": {
             "name": "b-radio-button",
             "parent": "b-checkbox",
@@ -849,18 +805,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/form/b-radio-button/b-radio-button.ts",
+          "logic": "node_modules/@v4fire/client/src/components/form/b-radio-button/b-radio-button.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/form/b-radio-button/b-radio-button.styl"
+            "node_modules/@v4fire/client/src/components/form/b-radio-button/b-radio-button.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/form/b-radio-button/b-radio-button.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/form/b-radio-button/b-radio-button.ss",
           "etpl": null
         }
       ],
       [
         "b-remote-provider",
         {
-          "index": "node_modules/@v4fire/client/src/base/b-remote-provider/index.js",
+          "index": "node_modules/@v4fire/client/src/components/base/b-remote-provider/index.js",
           "declaration": {
             "name": "b-remote-provider",
             "parent": "i-data",
@@ -881,18 +837,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/base/b-remote-provider/b-remote-provider.ts",
+          "logic": "node_modules/@v4fire/client/src/components/base/b-remote-provider/b-remote-provider.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/base/b-remote-provider/b-remote-provider.styl"
+            "node_modules/@v4fire/client/src/components/base/b-remote-provider/b-remote-provider.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/base/b-remote-provider/b-remote-provider.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/base/b-remote-provider/b-remote-provider.ss",
           "etpl": null
         }
       ],
       [
         "b-router",
         {
-          "index": "node_modules/@v4fire/client/src/base/b-router/index.js",
+          "index": "node_modules/@v4fire/client/src/components/base/b-router/index.js",
           "declaration": {
             "name": "b-router",
             "parent": "i-data",
@@ -913,56 +869,62 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/base/b-router/b-router.ts",
+          "logic": "node_modules/@v4fire/client/src/components/base/b-router/b-router.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/base/b-router/b-router.styl"
+            "node_modules/@v4fire/client/src/components/base/b-router/b-router.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/base/b-router/b-router.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/base/b-router/b-router.ss",
           "etpl": null
         }
       ],
       [
         "b-select",
         {
-          "index": "node_modules/@v4fire/client/src/form/b-select/index.js",
+          "index": "node_modules/@v4fire/client/src/components/form/b-select/index.js",
           "declaration": {
             "name": "b-select",
             "parent": "i-input-text",
             "dependencies": [
-              "b-icon",
               "b-progress-icon"
             ],
-            "libs": []
+            "libs": [
+              "components/directives/icon"
+            ]
           },
           "name": "b-select",
           "parent": "i-input-text",
           "dependencies": [
-            "b-icon",
             "b-progress-icon"
           ],
-          "libs": [],
+          "libs": [
+            "components/directives/icon"
+          ],
           "resolvedLibs": {
             "%data": "%data:Set",
-            "%data:Set": []
+            "%data:Set": [
+              "components/directives/icon"
+            ]
           },
           "resolvedOwnLibs": {
             "%data": "%data:Set",
-            "%data:Set": []
+            "%data:Set": [
+              "components/directives/icon"
+            ]
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/form/b-select/b-select.ts",
+          "logic": "node_modules/@v4fire/client/src/components/form/b-select/b-select.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/form/b-select/b-select.styl"
+            "node_modules/@v4fire/client/src/components/form/b-select/b-select.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/form/b-select/b-select.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/form/b-select/b-select.ss",
           "etpl": null
         }
       ],
       [
         "b-select-date",
         {
-          "index": "node_modules/@v4fire/client/src/form/b-select-date/index.js",
+          "index": "node_modules/@v4fire/client/src/components/form/b-select-date/index.js",
           "declaration": {
             "name": "b-select-date",
             "parent": "i-input",
@@ -987,18 +949,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/form/b-select-date/b-select-date.ts",
+          "logic": "node_modules/@v4fire/client/src/components/form/b-select-date/b-select-date.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/form/b-select-date/b-select-date.styl"
+            "node_modules/@v4fire/client/src/components/form/b-select-date/b-select-date.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/form/b-select-date/b-select-date.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/form/b-select-date/b-select-date.ss",
           "etpl": null
         }
       ],
       [
         "b-sidebar",
         {
-          "index": "node_modules/@v4fire/client/src/base/b-sidebar/index.js",
+          "index": "node_modules/@v4fire/client/src/components/base/b-sidebar/index.js",
           "declaration": {
             "name": "b-sidebar",
             "parent": "i-data",
@@ -1019,18 +981,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/base/b-sidebar/b-sidebar.ts",
+          "logic": "node_modules/@v4fire/client/src/components/base/b-sidebar/b-sidebar.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/base/b-sidebar/b-sidebar.styl"
+            "node_modules/@v4fire/client/src/components/base/b-sidebar/b-sidebar.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/base/b-sidebar/b-sidebar.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/base/b-sidebar/b-sidebar.ss",
           "etpl": null
         }
       ],
       [
         "b-skeleton",
         {
-          "index": "node_modules/@v4fire/client/src/base/b-skeleton/index.js",
+          "index": "node_modules/@v4fire/client/src/components/base/b-skeleton/index.js",
           "declaration": {
             "name": "b-skeleton",
             "parent": "i-block",
@@ -1053,88 +1015,96 @@
           "mixin": false,
           "logic": null,
           "styles": [
-            "node_modules/@v4fire/client/src/base/b-skeleton/b-skeleton.styl"
+            "node_modules/@v4fire/client/src/components/base/b-skeleton/b-skeleton.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/base/b-skeleton/b-skeleton.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/base/b-skeleton/b-skeleton.ss",
           "etpl": null
         }
       ],
       [
         "b-slider",
         {
-          "index": "node_modules/@v4fire/client/src/base/b-slider/index.js",
+          "index": "node_modules/@v4fire/client/src/components/base/b-slider/index.js",
           "declaration": {
             "name": "b-slider",
             "parent": "i-data",
             "dependencies": [],
             "libs": [
-              "core/component/directives/resize-observer"
+              "components/directives/on-resize"
             ]
           },
           "name": "b-slider",
           "parent": "i-data",
           "dependencies": [],
           "libs": [
-            "core/component/directives/resize-observer"
+            "components/directives/on-resize"
           ],
           "resolvedLibs": {
             "%data": "%data:Set",
             "%data:Set": [
-              "core/component/directives/resize-observer"
+              "components/directives/on-resize"
             ]
           },
           "resolvedOwnLibs": {
             "%data": "%data:Set",
             "%data:Set": [
-              "core/component/directives/resize-observer"
+              "components/directives/on-resize"
             ]
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/base/b-slider/b-slider.ts",
+          "logic": "node_modules/@v4fire/client/src/components/base/b-slider/b-slider.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/base/b-slider/b-slider.styl"
+            "node_modules/@v4fire/client/src/components/base/b-slider/b-slider.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/base/b-slider/b-slider.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/base/b-slider/b-slider.ss",
           "etpl": null
         }
       ],
       [
         "b-textarea",
         {
-          "index": "node_modules/@v4fire/client/src/form/b-textarea/index.js",
+          "index": "node_modules/@v4fire/client/src/components/form/b-textarea/index.js",
           "declaration": {
             "name": "b-textarea",
             "parent": "i-input-text",
             "dependencies": [],
-            "libs": []
+            "libs": [
+              "components/directives/bind-with"
+            ]
           },
           "name": "b-textarea",
           "parent": "i-input-text",
           "dependencies": [],
-          "libs": [],
+          "libs": [
+            "components/directives/bind-with"
+          ],
           "resolvedLibs": {
             "%data": "%data:Set",
-            "%data:Set": []
+            "%data:Set": [
+              "components/directives/bind-with"
+            ]
           },
           "resolvedOwnLibs": {
             "%data": "%data:Set",
-            "%data:Set": []
+            "%data:Set": [
+              "components/directives/bind-with"
+            ]
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/form/b-textarea/b-textarea.ts",
+          "logic": "node_modules/@v4fire/client/src/components/form/b-textarea/b-textarea.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/form/b-textarea/b-textarea.styl"
+            "node_modules/@v4fire/client/src/components/form/b-textarea/b-textarea.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/form/b-textarea/b-textarea.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/form/b-textarea/b-textarea.ss",
           "etpl": null
         }
       ],
       [
         "b-tree",
         {
-          "index": "node_modules/@v4fire/client/src/base/b-tree/index.js",
+          "index": "node_modules/@v4fire/client/src/components/base/b-tree/index.js",
           "declaration": {
             "name": "b-tree",
             "parent": "i-data",
@@ -1155,50 +1125,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/base/b-tree/b-tree.ts",
+          "logic": "node_modules/@v4fire/client/src/components/base/b-tree/b-tree.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/base/b-tree/b-tree.styl"
+            "node_modules/@v4fire/client/src/components/base/b-tree/b-tree.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/base/b-tree/b-tree.ss",
-          "etpl": null
-        }
-      ],
-      [
-        "b-v4-component-demo",
-        {
-          "index": "node_modules/@v4fire/client/src/pages/p-v4-components-demo/b-v4-component-demo/index.js",
-          "declaration": {
-            "name": "b-v4-component-demo",
-            "parent": "i-block",
-            "dependencies": [],
-            "libs": []
-          },
-          "name": "b-v4-component-demo",
-          "parent": "i-block",
-          "dependencies": [],
-          "libs": [],
-          "resolvedLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "resolvedOwnLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "type": "block",
-          "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/pages/p-v4-components-demo/b-v4-component-demo/b-v4-component-demo.ts",
-          "styles": [
-            "node_modules/@v4fire/client/src/pages/p-v4-components-demo/b-v4-component-demo/b-v4-component-demo.styl"
-          ],
-          "tpl": "node_modules/@v4fire/client/src/pages/p-v4-components-demo/b-v4-component-demo/b-v4-component-demo.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/base/b-tree/b-tree.ss",
           "etpl": null
         }
       ],
       [
         "b-virtual-scroll",
         {
-          "index": "node_modules/@v4fire/client/src/base/b-virtual-scroll/index.js",
+          "index": "node_modules/@v4fire/client/src/components/base/b-virtual-scroll/index.js",
           "declaration": {
             "name": "b-virtual-scroll",
             "parent": "i-data",
@@ -1219,18 +1157,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/base/b-virtual-scroll/b-virtual-scroll.ts",
+          "logic": "node_modules/@v4fire/client/src/components/base/b-virtual-scroll/b-virtual-scroll.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/base/b-virtual-scroll/b-virtual-scroll.styl"
+            "node_modules/@v4fire/client/src/components/base/b-virtual-scroll/b-virtual-scroll.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/base/b-virtual-scroll/b-virtual-scroll.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/base/b-virtual-scroll/b-virtual-scroll.ss",
           "etpl": null
         }
       ],
       [
         "b-window",
         {
-          "index": "node_modules/@v4fire/client/src/base/b-window/index.js",
+          "index": "node_modules/@v4fire/client/src/components/base/b-window/index.js",
           "declaration": {
             "name": "b-window",
             "parent": "i-data",
@@ -1255,50 +1193,18 @@
           },
           "type": "block",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/base/b-window/b-window.ts",
+          "logic": "node_modules/@v4fire/client/src/components/base/b-window/b-window.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/base/b-window/b-window.styl"
+            "node_modules/@v4fire/client/src/components/base/b-window/b-window.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/base/b-window/b-window.ss",
-          "etpl": null
-        }
-      ],
-      [
-        "g-debug",
-        {
-          "index": "node_modules/@v4fire/client/src/global/g-debug/index.js",
-          "declaration": {
-            "name": "g-debug",
-            "parent": null,
-            "dependencies": [],
-            "libs": []
-          },
-          "name": "g-debug",
-          "parent": null,
-          "dependencies": [],
-          "libs": [],
-          "resolvedLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "resolvedOwnLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "type": "global",
-          "mixin": false,
-          "logic": null,
-          "styles": [
-            "node_modules/@v4fire/client/src/global/g-debug/g-debug.styl"
-          ],
-          "tpl": null,
+          "tpl": "node_modules/@v4fire/client/src/components/base/b-window/b-window.ss",
           "etpl": null
         }
       ],
       [
         "g-def",
         {
-          "index": "node_modules/@v4fire/client/src/global/g-def/index.js",
+          "index": "node_modules/@v4fire/client/src/components/global/g-def/index.js",
           "declaration": {
             "name": "g-def",
             "parent": null,
@@ -1321,7 +1227,7 @@
           "mixin": false,
           "logic": null,
           "styles": [
-            "node_modules/@v4fire/client/src/global/g-def/g-def.styl"
+            "node_modules/@v4fire/client/src/components/global/g-def/g-def.styl"
           ],
           "tpl": null,
           "etpl": null
@@ -1330,7 +1236,7 @@
       [
         "g-hint",
         {
-          "index": "node_modules/@v4fire/client/src/global/g-hint/index.js",
+          "index": "node_modules/@v4fire/client/src/components/global/g-hint/index.js",
           "declaration": {
             "name": "g-hint",
             "parent": null,
@@ -1353,7 +1259,7 @@
           "mixin": false,
           "logic": null,
           "styles": [
-            "node_modules/@v4fire/client/src/global/g-hint/g-hint.styl"
+            "node_modules/@v4fire/client/src/components/global/g-hint/g-hint.styl"
           ],
           "tpl": null,
           "etpl": null
@@ -1362,7 +1268,7 @@
       [
         "g-icon",
         {
-          "index": "node_modules/@v4fire/client/src/global/g-icon/index.js",
+          "index": "node_modules/@v4fire/client/src/components/global/g-icon/index.js",
           "declaration": {
             "name": "g-icon",
             "parent": null,
@@ -1385,7 +1291,7 @@
           "mixin": false,
           "logic": null,
           "styles": [
-            "node_modules/@v4fire/client/src/global/g-icon/g-icon.styl"
+            "node_modules/@v4fire/client/src/components/global/g-icon/g-icon.styl"
           ],
           "tpl": null,
           "etpl": null
@@ -1394,7 +1300,7 @@
       [
         "i-access",
         {
-          "index": "node_modules/@v4fire/client/src/traits/i-access/index.js",
+          "index": "node_modules/@v4fire/client/src/components/traits/i-access/index.js",
           "declaration": {
             "name": "i-access",
             "parent": null,
@@ -1415,9 +1321,9 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/traits/i-access/i-access.ts",
+          "logic": "node_modules/@v4fire/client/src/components/traits/i-access/i-access.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/traits/i-access/i-access.styl"
+            "node_modules/@v4fire/client/src/components/traits/i-access/i-access.styl"
           ],
           "tpl": null,
           "etpl": null
@@ -1426,7 +1332,7 @@
       [
         "i-block",
         {
-          "index": "node_modules/@v4fire/client/src/super/i-block/index.js",
+          "index": "node_modules/@v4fire/client/src/components/super/i-block/index.js",
           "declaration": {
             "name": "i-block",
             "parent": null,
@@ -1447,18 +1353,18 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/super/i-block/i-block.ts",
+          "logic": "node_modules/@v4fire/client/src/components/super/i-block/i-block.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/super/i-block/i-block.styl"
+            "node_modules/@v4fire/client/src/components/super/i-block/i-block.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/super/i-block/i-block.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/super/i-block/i-block.ss",
           "etpl": null
         }
       ],
       [
         "i-data",
         {
-          "index": "node_modules/@v4fire/client/src/super/i-data/index.js",
+          "index": "node_modules/@v4fire/client/src/components/super/i-data/index.js",
           "declaration": {
             "name": "i-data",
             "parent": "i-block",
@@ -1479,18 +1385,52 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/super/i-data/i-data.ts",
+          "logic": "node_modules/@v4fire/client/src/components/super/i-data/i-data.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/super/i-data/i-data.styl"
+            "node_modules/@v4fire/client/src/components/super/i-data/i-data.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/super/i-data/i-data.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/super/i-data/i-data.ss",
+          "etpl": null
+        }
+      ],
+      [
+        "i-data-provider",
+        {
+          "index": "node_modules/@v4fire/client/src/components/traits/i-data-provider/index.js",
+          "declaration": {
+            "name": "i-data-provider",
+            "parent": null,
+            "dependencies": [
+              "i-progress"
+            ],
+            "libs": []
+          },
+          "name": "i-data-provider",
+          "parent": null,
+          "dependencies": [
+            "i-progress"
+          ],
+          "libs": [],
+          "resolvedLibs": {
+            "%data": "%data:Set",
+            "%data:Set": []
+          },
+          "resolvedOwnLibs": {
+            "%data": "%data:Set",
+            "%data:Set": []
+          },
+          "type": "interface",
+          "mixin": false,
+          "logic": "node_modules/@v4fire/client/src/components/traits/i-data-provider/i-data-provider.ts",
+          "styles": [],
+          "tpl": null,
           "etpl": null
         }
       ],
       [
         "i-dynamic-page",
         {
-          "index": "node_modules/@v4fire/client/src/super/i-dynamic-page/index.js",
+          "index": "node_modules/@v4fire/client/src/components/super/i-dynamic-page/index.js",
           "declaration": {
             "name": "i-dynamic-page",
             "parent": "i-page",
@@ -1511,18 +1451,18 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/super/i-dynamic-page/i-dynamic-page.ts",
+          "logic": "node_modules/@v4fire/client/src/components/super/i-dynamic-page/i-dynamic-page.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/super/i-dynamic-page/i-dynamic-page.styl"
+            "node_modules/@v4fire/client/src/components/super/i-dynamic-page/i-dynamic-page.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/super/i-dynamic-page/i-dynamic-page.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/super/i-dynamic-page/i-dynamic-page.ss",
           "etpl": null
         }
       ],
       [
         "i-history",
         {
-          "index": "node_modules/@v4fire/client/src/traits/i-history/index.js",
+          "index": "node_modules/@v4fire/client/src/components/traits/i-history/index.js",
           "declaration": {
             "name": "i-history",
             "parent": null,
@@ -1543,48 +1483,18 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/traits/i-history/i-history.ts",
+          "logic": "node_modules/@v4fire/client/src/components/traits/i-history/i-history.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/traits/i-history/i-history.styl"
+            "node_modules/@v4fire/client/src/components/traits/i-history/i-history.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/traits/i-history/i-history.ss",
-          "etpl": null
-        }
-      ],
-      [
-        "i-icon",
-        {
-          "index": "node_modules/@v4fire/client/src/traits/i-icon/index.js",
-          "declaration": {
-            "name": "i-icon",
-            "parent": null,
-            "dependencies": [],
-            "libs": []
-          },
-          "name": "i-icon",
-          "parent": null,
-          "dependencies": [],
-          "libs": [],
-          "resolvedLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "resolvedOwnLibs": {
-            "%data": "%data:Set",
-            "%data:Set": []
-          },
-          "type": "interface",
-          "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/traits/i-icon/i-icon.ts",
-          "styles": [],
-          "tpl": null,
+          "tpl": "node_modules/@v4fire/client/src/components/traits/i-history/i-history.ss",
           "etpl": null
         }
       ],
       [
         "i-input",
         {
-          "index": "node_modules/@v4fire/client/src/super/i-input/index.js",
+          "index": "node_modules/@v4fire/client/src/components/super/i-input/index.js",
           "declaration": {
             "name": "i-input",
             "parent": "i-data",
@@ -1605,18 +1515,18 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/super/i-input/i-input.ts",
+          "logic": "node_modules/@v4fire/client/src/components/super/i-input/i-input.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/super/i-input/i-input.styl"
+            "node_modules/@v4fire/client/src/components/super/i-input/i-input.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/super/i-input/i-input.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/super/i-input/i-input.ss",
           "etpl": null
         }
       ],
       [
         "i-input-text",
         {
-          "index": "node_modules/@v4fire/client/src/super/i-input-text/index.js",
+          "index": "node_modules/@v4fire/client/src/components/super/i-input-text/index.js",
           "declaration": {
             "name": "i-input-text",
             "parent": "i-input",
@@ -1637,18 +1547,18 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/super/i-input-text/i-input-text.ts",
+          "logic": "node_modules/@v4fire/client/src/components/super/i-input-text/i-input-text.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/super/i-input-text/i-input-text.styl"
+            "node_modules/@v4fire/client/src/components/super/i-input-text/i-input-text.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/super/i-input-text/i-input-text.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/super/i-input-text/i-input-text.ss",
           "etpl": null
         }
       ],
       [
         "i-items",
         {
-          "index": "node_modules/@v4fire/client/src/traits/i-items/index.js",
+          "index": "node_modules/@v4fire/client/src/components/traits/i-items/index.js",
           "declaration": {
             "name": "i-items",
             "parent": null,
@@ -1669,7 +1579,7 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/traits/i-items/i-items.ts",
+          "logic": "node_modules/@v4fire/client/src/components/traits/i-items/i-items.ts",
           "styles": [],
           "tpl": null,
           "etpl": null
@@ -1678,7 +1588,7 @@
       [
         "i-lock-page-scroll",
         {
-          "index": "node_modules/@v4fire/client/src/traits/i-lock-page-scroll/index.js",
+          "index": "node_modules/@v4fire/client/src/components/traits/i-lock-page-scroll/index.js",
           "declaration": {
             "name": "i-lock-page-scroll",
             "parent": null,
@@ -1699,9 +1609,9 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/traits/i-lock-page-scroll/i-lock-page-scroll.ts",
+          "logic": "node_modules/@v4fire/client/src/components/traits/i-lock-page-scroll/i-lock-page-scroll.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/traits/i-lock-page-scroll/i-lock-page-scroll.styl"
+            "node_modules/@v4fire/client/src/components/traits/i-lock-page-scroll/i-lock-page-scroll.styl"
           ],
           "tpl": null,
           "etpl": null
@@ -1710,7 +1620,7 @@
       [
         "i-observe-dom",
         {
-          "index": "node_modules/@v4fire/client/src/traits/i-observe-dom/index.js",
+          "index": "node_modules/@v4fire/client/src/components/traits/i-observe-dom/index.js",
           "declaration": {
             "name": "i-observe-dom",
             "parent": null,
@@ -1731,7 +1641,7 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/traits/i-observe-dom/i-observe-dom.ts",
+          "logic": "node_modules/@v4fire/client/src/components/traits/i-observe-dom/i-observe-dom.ts",
           "styles": [],
           "tpl": null,
           "etpl": null
@@ -1740,7 +1650,7 @@
       [
         "i-open",
         {
-          "index": "node_modules/@v4fire/client/src/traits/i-open/index.js",
+          "index": "node_modules/@v4fire/client/src/components/traits/i-open/index.js",
           "declaration": {
             "name": "i-open",
             "parent": null,
@@ -1761,7 +1671,7 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/traits/i-open/i-open.ts",
+          "logic": "node_modules/@v4fire/client/src/components/traits/i-open/i-open.ts",
           "styles": [],
           "tpl": null,
           "etpl": null
@@ -1770,7 +1680,7 @@
       [
         "i-open-toggle",
         {
-          "index": "node_modules/@v4fire/client/src/traits/i-open-toggle/index.js",
+          "index": "node_modules/@v4fire/client/src/components/traits/i-open-toggle/index.js",
           "declaration": {
             "name": "i-open-toggle",
             "parent": "i-open",
@@ -1791,7 +1701,7 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/traits/i-open-toggle/i-open-toggle.ts",
+          "logic": "node_modules/@v4fire/client/src/components/traits/i-open-toggle/i-open-toggle.ts",
           "styles": [],
           "tpl": null,
           "etpl": null
@@ -1800,7 +1710,7 @@
       [
         "i-page",
         {
-          "index": "node_modules/@v4fire/client/src/super/i-page/index.js",
+          "index": "node_modules/@v4fire/client/src/components/super/i-page/index.js",
           "declaration": {
             "name": "i-page",
             "parent": "i-data",
@@ -1821,18 +1731,18 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/super/i-page/i-page.ts",
+          "logic": "node_modules/@v4fire/client/src/components/super/i-page/i-page.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/super/i-page/i-page.styl"
+            "node_modules/@v4fire/client/src/components/super/i-page/i-page.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/super/i-page/i-page.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/super/i-page/i-page.ss",
           "etpl": null
         }
       ],
       [
         "i-progress",
         {
-          "index": "node_modules/@v4fire/client/src/traits/i-progress/index.js",
+          "index": "node_modules/@v4fire/client/src/components/traits/i-progress/index.js",
           "declaration": {
             "name": "i-progress",
             "parent": null,
@@ -1853,9 +1763,9 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/traits/i-progress/i-progress.ts",
+          "logic": "node_modules/@v4fire/client/src/components/traits/i-progress/i-progress.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/traits/i-progress/i-progress.styl"
+            "node_modules/@v4fire/client/src/components/traits/i-progress/i-progress.styl"
           ],
           "tpl": null,
           "etpl": null
@@ -1864,7 +1774,7 @@
       [
         "i-size",
         {
-          "index": "node_modules/@v4fire/client/src/traits/i-size/index.js",
+          "index": "node_modules/@v4fire/client/src/components/traits/i-size/index.js",
           "declaration": {
             "name": "i-size",
             "parent": null,
@@ -1885,7 +1795,7 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/traits/i-size/i-size.ts",
+          "logic": "node_modules/@v4fire/client/src/components/traits/i-size/i-size.ts",
           "styles": [],
           "tpl": null,
           "etpl": null
@@ -1894,7 +1804,7 @@
       [
         "i-static-page",
         {
-          "index": "node_modules/@v4fire/client/src/super/i-static-page/index.js",
+          "index": "node_modules/@v4fire/client/src/components/super/i-static-page/index.js",
           "declaration": {
             "name": "i-static-page",
             "parent": "i-page",
@@ -1915,9 +1825,9 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/super/i-static-page/i-static-page.ts",
+          "logic": "node_modules/@v4fire/client/src/components/super/i-static-page/i-static-page.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/super/i-static-page/i-static-page.styl"
+            "node_modules/@v4fire/client/src/components/super/i-static-page/i-static-page.styl"
           ],
           "tpl": null,
           "etpl": null
@@ -1926,7 +1836,7 @@
       [
         "i-visible",
         {
-          "index": "node_modules/@v4fire/client/src/traits/i-visible/index.js",
+          "index": "node_modules/@v4fire/client/src/components/traits/i-visible/index.js",
           "declaration": {
             "name": "i-visible",
             "parent": null,
@@ -1947,9 +1857,9 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/traits/i-visible/i-visible.ts",
+          "logic": "node_modules/@v4fire/client/src/components/traits/i-visible/i-visible.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/traits/i-visible/i-visible.styl"
+            "node_modules/@v4fire/client/src/components/traits/i-visible/i-visible.styl"
           ],
           "tpl": null,
           "etpl": null
@@ -1958,7 +1868,7 @@
       [
         "i-width",
         {
-          "index": "node_modules/@v4fire/client/src/traits/i-width/index.js",
+          "index": "node_modules/@v4fire/client/src/components/traits/i-width/index.js",
           "declaration": {
             "name": "i-width",
             "parent": null,
@@ -1979,9 +1889,9 @@
           },
           "type": "interface",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/traits/i-width/i-width.ts",
+          "logic": "node_modules/@v4fire/client/src/components/traits/i-width/i-width.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/traits/i-width/i-width.styl"
+            "node_modules/@v4fire/client/src/components/traits/i-width/i-width.styl"
           ],
           "tpl": null,
           "etpl": null
@@ -2096,111 +2006,85 @@
       [
         "p-v4-components-demo",
         {
-          "index": "node_modules/@v4fire/client/src/pages/p-v4-components-demo/index.js",
+          "index": "node_modules/@v4fire/client/src/components/pages/p-v4-components-demo/index.js",
           "declaration": {
             "name": "p-v4-components-demo",
             "parent": "i-static-page",
             "dependencies": [
-              "b-v4-component-demo",
-              "p-v4-dynamic-page1",
-              "p-v4-dynamic-page2",
-              "p-v4-dynamic-page3",
-              "b-remote-provider",
+              "b-dummy",
               "b-router",
               "b-dynamic-page",
-              "b-tree",
+              "b-remote-provider",
               "b-list",
+              "b-tree",
+              "b-window",
               "b-form",
               "b-button",
+              "b-icon-button",
               "b-checkbox",
               "b-radio-button",
-              "b-input-hidden",
+              "b-hidden-input",
               "b-input",
               "b-textarea",
-              "b-select",
-              "b-select-date",
-              "b-virtual-scroll",
-              "b-window",
-              "b-sidebar",
-              "b-slider",
-              "b-bottom-slide",
-              "b-icon",
-              "b-image",
-              "b-dummy",
-              "b-dummy-text",
-              "b-dummy-async-render",
-              "b-dummy-module-loader",
-              "b-dummy-lfc",
-              "b-dummy-watch",
-              "b-dummy-sync",
-              "b-dummy-state",
-              "b-dummy-control-list",
-              "b-dummy-decorators"
+              "b-select"
             ],
-            "libs": []
+            "libs": [
+              "components/directives/image",
+              "components/directives/icon"
+            ]
           },
           "name": "p-v4-components-demo",
           "parent": "i-static-page",
           "dependencies": [
-            "b-v4-component-demo",
-            "p-v4-dynamic-page1",
-            "p-v4-dynamic-page2",
-            "p-v4-dynamic-page3",
-            "b-remote-provider",
+            "b-dummy",
             "b-router",
             "b-dynamic-page",
-            "b-tree",
+            "b-remote-provider",
             "b-list",
+            "b-tree",
+            "b-window",
             "b-form",
             "b-button",
+            "b-icon-button",
             "b-checkbox",
             "b-radio-button",
-            "b-input-hidden",
+            "b-hidden-input",
             "b-input",
             "b-textarea",
-            "b-select",
-            "b-select-date",
-            "b-virtual-scroll",
-            "b-window",
-            "b-sidebar",
-            "b-slider",
-            "b-bottom-slide",
-            "b-icon",
-            "b-image",
-            "b-dummy",
-            "b-dummy-text",
-            "b-dummy-async-render",
-            "b-dummy-module-loader",
-            "b-dummy-lfc",
-            "b-dummy-watch",
-            "b-dummy-sync",
-            "b-dummy-state",
-            "b-dummy-control-list",
-            "b-dummy-decorators"
+            "b-select"
           ],
-          "libs": [],
+          "libs": [
+            "components/directives/image",
+            "components/directives/icon"
+          ],
           "resolvedLibs": {
             "%data": "%data:Set",
-            "%data:Set": []
+            "%data:Set": [
+              "components/directives/icon",
+              "components/directives/image"
+            ]
           },
           "resolvedOwnLibs": {
             "%data": "%data:Set",
-            "%data:Set": []
+            "%data:Set": [
+              "components/directives/icon",
+              "components/directives/image"
+            ]
           },
           "type": "page",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/pages/p-v4-components-demo/p-v4-components-demo.ts",
+          "logic": "node_modules/@v4fire/client/src/components/pages/p-v4-components-demo/p-v4-components-demo.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/pages/p-v4-components-demo/p-v4-components-demo.styl"
+            "node_modules/@v4fire/client/src/components/pages/p-v4-components-demo/p-v4-components-demo.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/pages/p-v4-components-demo/p-v4-components-demo.ss",
-          "etpl": "node_modules/@v4fire/client/src/pages/p-v4-components-demo/p-v4-components-demo.ess"
+          "tpl": "node_modules/@v4fire/client/src/components/pages/p-v4-components-demo/p-v4-components-demo.ss",
+          "etpl": "node_modules/@v4fire/client/src/components/pages/p-v4-components-demo/p-v4-components-demo.ess"
         }
       ],
       [
         "p-v4-dynamic-page1",
         {
-          "index": "node_modules/@v4fire/client/src/pages/p-v4-dynamic-page1/index.js",
+          "index": "node_modules/@v4fire/client/src/components/pages/p-v4-dynamic-page1/index.js",
           "declaration": {
             "name": "p-v4-dynamic-page1",
             "parent": "i-dynamic-page",
@@ -2225,18 +2109,18 @@
           },
           "type": "page",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/pages/p-v4-dynamic-page1/p-v4-dynamic-page1.ts",
+          "logic": "node_modules/@v4fire/client/src/components/pages/p-v4-dynamic-page1/p-v4-dynamic-page1.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/pages/p-v4-dynamic-page1/p-v4-dynamic-page1.styl"
+            "node_modules/@v4fire/client/src/components/pages/p-v4-dynamic-page1/p-v4-dynamic-page1.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/pages/p-v4-dynamic-page1/p-v4-dynamic-page1.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/pages/p-v4-dynamic-page1/p-v4-dynamic-page1.ss",
           "etpl": null
         }
       ],
       [
         "p-v4-dynamic-page2",
         {
-          "index": "node_modules/@v4fire/client/src/pages/p-v4-dynamic-page2/index.js",
+          "index": "node_modules/@v4fire/client/src/components/pages/p-v4-dynamic-page2/index.js",
           "declaration": {
             "name": "p-v4-dynamic-page2",
             "parent": "i-dynamic-page",
@@ -2261,18 +2145,18 @@
           },
           "type": "page",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/pages/p-v4-dynamic-page2/p-v4-dynamic-page2.ts",
+          "logic": "node_modules/@v4fire/client/src/components/pages/p-v4-dynamic-page2/p-v4-dynamic-page2.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/pages/p-v4-dynamic-page2/p-v4-dynamic-page2.styl"
+            "node_modules/@v4fire/client/src/components/pages/p-v4-dynamic-page2/p-v4-dynamic-page2.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/pages/p-v4-dynamic-page2/p-v4-dynamic-page2.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/pages/p-v4-dynamic-page2/p-v4-dynamic-page2.ss",
           "etpl": null
         }
       ],
       [
         "p-v4-dynamic-page3",
         {
-          "index": "node_modules/@v4fire/client/src/pages/p-v4-dynamic-page3/index.js",
+          "index": "node_modules/@v4fire/client/src/components/pages/p-v4-dynamic-page3/index.js",
           "declaration": {
             "name": "p-v4-dynamic-page3",
             "parent": "i-dynamic-page",
@@ -2297,11 +2181,11 @@
           },
           "type": "page",
           "mixin": false,
-          "logic": "node_modules/@v4fire/client/src/pages/p-v4-dynamic-page3/p-v4-dynamic-page3.ts",
+          "logic": "node_modules/@v4fire/client/src/components/pages/p-v4-dynamic-page3/p-v4-dynamic-page3.ts",
           "styles": [
-            "node_modules/@v4fire/client/src/pages/p-v4-dynamic-page3/p-v4-dynamic-page3.styl"
+            "node_modules/@v4fire/client/src/components/pages/p-v4-dynamic-page3/p-v4-dynamic-page3.styl"
           ],
-          "tpl": "node_modules/@v4fire/client/src/pages/p-v4-dynamic-page3/p-v4-dynamic-page3.ss",
+          "tpl": "node_modules/@v4fire/client/src/components/pages/p-v4-dynamic-page3/p-v4-dynamic-page3.ss",
           "etpl": null
         }
       ]
